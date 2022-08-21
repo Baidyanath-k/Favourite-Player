@@ -29,3 +29,39 @@ a{
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+/* ##### header section end ##### */
+
+
+
+/* ##### main section start ##### */
+#main-section{
+    background-color: #151515;
+    padding: 50px 0;
+}
+.card-item{
+    color: #fff;
+    border: 2px solid rgb(53, 50, 50);
+    margin-bottom: 30px;
+}
+.card-item h2{
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0;
+    font-size: 25px;
+}
+.card-item p span{
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-item button{
+    font-family: 'Roboto', sans-serif;
+    padding: 3px 0;
+    font-size: 25px;
+    background-color: #015196;
+    color: #fff;
+    border: none;
+    transition: all 0.2s linear;
+}
+.card-item button:hover{
+    /* background-color: #A2A9AF; */
+    background-color: #01509675;
+}
