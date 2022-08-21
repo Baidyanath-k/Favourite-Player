@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* ##### header section start ##### */
+#header-section{
+    background-color: #000000;
+}
+.first-second-sec{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-second-sec{
+    color: #fff;
+}
+.header-second-sec h2{
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    font-size: 55px;
+    color: #FF5E19;
+}
+.header-second-sec p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
