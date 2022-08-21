@@ -65,3 +65,22 @@ a{
     /* background-color: #A2A9AF; */
     background-color: #01509675;
 }
+
+
+.selected-player{
+    background-color: #0D0D0D;
+    
+}
+.selected-player-head{
+    color: #7B9BB0;
+    border-bottom: 2px solid #7B9BB0;
+    padding: 15px 0;
+}
+.selected-player-body{
+    color: #C4C4C4;
+    padding: 15px 0;
+}
+.selected-player-body ol li{
+    padding: 5px 0;
+    font-size: 20px;
+}
