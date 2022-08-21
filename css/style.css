@@ -84,3 +84,72 @@ a{
     padding: 5px 0;
     font-size: 20px;
 }
+.budget{
+    background-color: #0D0D0D;
+    margin-top: 50px;
+}
+.budget-head{
+    color: #7B9BB0;
+    border-bottom: 2px solid #7B9BB0;
+    padding: 15px 0;
+}
+.per-player{
+    padding: 15px 10px;
+}
+.player-expense{
+    color: #9D9D9D;
+    font-size: 20px;
+}
+.manager{
+    padding: 15px 10px;
+}
+.coach{
+    padding: 15px 10px;
+}
+.total{
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: #9D9D9D;
+    font-size: 20px;
+}
+.col-form-label{
+    color: #9D9D9D;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+.common-btn{
+    border-radius: 0;
+    font-size: 18px;
+}
+.common-btn:focus{
+    box-shadow: none;
+    border-color: none;
+}
+.bg-color{
+    color: #FF5E19;
+}
+/* ##### main section end ##### */
