@@ -56,7 +56,7 @@ document.getElementById('kylian-btn').addEventListener('click', function () {
 
 
     let liCheck = document.getElementById("selected-ol").getElementsByTagName('li').length;
-    console.log(liCheck);
+    
     if (parseInt(liCheck) < 5) {
 
         selectedOl.appendChild(createLi);
@@ -77,7 +77,7 @@ document.getElementById('vitor-btn').addEventListener('click', function () {
     let selectedOl = document.getElementById('selected-ol');
 
     let liCheck = document.getElementById("selected-ol").getElementsByTagName('li').length;
-    console.log(liCheck);
+    
 
 
     if (parseInt(liCheck) < 5) {
@@ -100,7 +100,7 @@ document.getElementById('sergio-btn').addEventListener('click', function () {
     let selectedOl = document.getElementById('selected-ol');
 
     let liCheck = document.getElementById("selected-ol").getElementsByTagName('li').length;
-    console.log(liCheck);
+    
 
 
     if (parseInt(liCheck) < 5) {
@@ -123,7 +123,7 @@ document.getElementById('renato-btn').addEventListener('click', function () {
 
 
     let liCheck = document.getElementById("selected-ol").getElementsByTagName('li').length;
-    console.log(liCheck);
+    
 
     if (parseInt(liCheck) < 5) {
 
@@ -144,3 +144,21 @@ function getInputElement(inputId) {
     const inputNum = parseFloat(inputElementValue);
     return inputNum;
 }
+function setElementByText(setId,setValue) {
+    const textElement=document.getElementById(setId);
+    textElement.innerText=setValue;
+}
+
+document.getElementById('calculate').addEventListener('click', function(){
+    let liCheck = document.getElementById("selected-ol").getElementsByTagName('li').length;
+    let liCheckNum=parseInt( liCheck);
+    
+    let perPlayerCost=getInputElement('per-player-cost');
+    if (isNaN(perPlayerCost)) {
+        alert("Please Enter Valid Input");
+    }else{
+        let totalPlayerCost=liCheckNum*perPlayerCost;
+        setElementByText('player-expense',totalPlayerCost)
+    }
+
+})
