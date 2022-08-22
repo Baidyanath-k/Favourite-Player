@@ -144,6 +144,12 @@ function getInputElement(inputId) {
     const inputNum = parseFloat(inputElementValue);
     return inputNum;
 }
+function getTextElement(textId){
+    let textElementId=document.getElementById(textId);
+    let textElementValue=textElementId.innerText;
+    let textElementNum=parseFloat(textElementValue);
+    return textElementNum;
+}
 function setElementByText(setId,setValue) {
     const textElement=document.getElementById(setId);
     textElement.innerText=setValue;
@@ -154,11 +160,40 @@ document.getElementById('calculate').addEventListener('click', function(){
     let liCheckNum=parseInt( liCheck);
     
     let perPlayerCost=getInputElement('per-player-cost');
-    if (isNaN(perPlayerCost)) {
-        alert("Please Enter Valid Input");
+
+    if(liCheckNum==0){
+        alert("Please, Choose Your Favourite Player");
     }else{
-        let totalPlayerCost=liCheckNum*perPlayerCost;
-        setElementByText('player-expense',totalPlayerCost)
+
+        if (isNaN(perPlayerCost)) {
+            alert("Please Enter Valid Input");
+        }else{
+            let totalPlayerCost=liCheckNum*perPlayerCost;
+            setElementByText('player-expense',totalPlayerCost)
+        }
     }
 
+})
+
+document.getElementById('total-calculate').addEventListener('click', function(){
+    let managerCost=getInputElement('manager-cost');
+    let coachCost=getInputElement('coach-cost');
+    let playerCost=getTextElement('player-expense');
+
+
+    if(playerCost==0){
+        alert("Please First Entry Perplayer Cost");
+    }else{
+
+        if (isNaN(managerCost) || isNaN(coachCost)) {
+            alert("Please Enter Valid Input");
+        }else{
+            let totalCost=managerCost+coachCost+playerCost;
+    
+            setElementByText('total-cost',totalCost);
+        }
+
+    }
+
+     
 })
