@@ -167,6 +167,8 @@ document.getElementById('calculate').addEventListener('click', function(){
 
         if (isNaN(perPlayerCost)) {
             alert("Please Enter Valid Input");
+        }else if(perPlayerCost<0){
+            alert("You do not entry negetive value");
         }else{
             let totalPlayerCost=liCheckNum*perPlayerCost;
             setElementByText('player-expense',totalPlayerCost)
@@ -182,11 +184,13 @@ document.getElementById('total-calculate').addEventListener('click', function(){
 
 
     if(playerCost==0){
-        alert("Please First Entry Perplayer Cost");
+        alert("Please First Calculate Perplayer Cost");
     }else{
 
         if (isNaN(managerCost) || isNaN(coachCost)) {
             alert("Please Enter Valid Input");
+        }else if(managerCost<0 || coachCost<0){
+            alert("You do not entry negetive value");
         }else{
             let totalCost=managerCost+coachCost+playerCost;
     
